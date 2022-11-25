@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nolled\\Desktop\\gsb_gesAMM_APP\\gsb_gesAMM_APP.csproj": {}
+    "C:\\Users\\nolled\\Documents\\GitHub\\ap2_gsb_groupe3\\gsb_gesAMM_APP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nolled\\Desktop\\gsb_gesAMM_APP\\gsb_gesAMM_APP.csproj": {
+    "C:\\Users\\nolled\\Documents\\GitHub\\ap2_gsb_groupe3\\gsb_gesAMM_APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nolled\\Desktop\\gsb_gesAMM_APP\\gsb_gesAMM_APP.csproj",
+        "projectUniqueName": "C:\\Users\\nolled\\Documents\\GitHub\\ap2_gsb_groupe3\\gsb_gesAMM_APP.csproj",
         "projectName": "gsb_gesAMM_APP",
-        "projectPath": "C:\\Users\\nolled\\Desktop\\gsb_gesAMM_APP\\gsb_gesAMM_APP.csproj",
+        "projectPath": "C:\\Users\\nolled\\Documents\\GitHub\\ap2_gsb_groupe3\\gsb_gesAMM_APP.csproj",
         "packagesPath": "C:\\Users\\nolled\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nolled\\Desktop\\gsb_gesAMM_APP\\obj\\",
+        "outputPath": "C:\\Users\\nolled\\Documents\\GitHub\\ap2_gsb_groupe3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
