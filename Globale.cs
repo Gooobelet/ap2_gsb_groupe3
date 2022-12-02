@@ -6,9 +6,9 @@ namespace gsb_gesAMM_APP
 {
     class Globale
     {
-        Dictionary<string, Famille> lesFamilles;
-        Dictionary<string, Medicament> lesMedicaments;
-        List<Workflow> lesEtapes;
-        List<Decision> lesDecisions;
+        public static Dictionary<string, Famille> lesFamilles;
+        public static Dictionary<string, Medicament> lesMedicaments;
+        public static List<Workflow> lesEtapes;
+        public static List<Decision> lesDecisions;
     }
 }
