@@ -5,12 +5,12 @@ using System.Text;
 
 namespace gsb_gesAMM_APP
 {
-    class EtapeNormee
+    class EtapeNormee : Etape
     {
         private string norme;
         private DateTime dateNorme;
 
-        public EtapeNormee(string norme, DateTime dateNorme)
+        public EtapeNormee(string norme, DateTime dateNorme, int num,string libelle) : base(num,libelle)
         {
             this.norme = norme;
             this.dateNorme = dateNorme;

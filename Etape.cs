@@ -11,7 +11,7 @@ namespace gsb_gesAMM_APP
         
         public Etape(int leNum, string leLibelle)
         {
-            this.num= leNum;
+            this.num = leNum;
             this.libelle = leLibelle;
         }
 
