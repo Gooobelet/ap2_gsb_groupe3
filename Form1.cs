@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace gsb_gesAMM_APP
 {
@@ -17,5 +18,11 @@ namespace gsb_gesAMM_APP
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            gestion_bdd bdd = new gestion_bdd("BTS2021-23\\SQLEXPRESS","GSB_gesAMM");
+            bdd.getLesFamilles();
+            bdd.getLesMedicaments();
+        }
     }
 }

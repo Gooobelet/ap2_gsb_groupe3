@@ -10,7 +10,7 @@ namespace gsb_gesAMM_APP
         private string norme;
         private DateTime dateNorme;
 
-        public EtapeNormee(string norme, DateTime dateNorme) : base(num,libelle)
+        public EtapeNormee(string norme, DateTime dateNorme, int num,string libelle) : base(num,libelle)
         {
             this.norme = norme;
             this.dateNorme = dateNorme;
