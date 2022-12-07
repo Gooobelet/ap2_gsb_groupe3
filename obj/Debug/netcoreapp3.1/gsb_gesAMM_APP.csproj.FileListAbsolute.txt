@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.exe
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.deps.json
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.runtimeconfig.json
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.runtimeconfig.dev.json
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.dll
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.pdb
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csproj.AssemblyReference.cache
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Form1.resources
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConnexion.resources
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Properties.Resources.resources
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csproj.GenerateResource.cache
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.AssemblyInfoInputs.cache
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.AssemblyInfo.cs
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csproj.CoreCompileInputs.cache
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csproj.CopyComplete
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.dll
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.pdb
+C:\Users\michelem\Documents\workspace gitkraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.genruntimeconfig.cache
+=======
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.exe
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.deps.json
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.runtimeconfig.json
@@ -20,3 +47,4 @@ C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_ges
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.dll
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.pdb
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.genruntimeconfig.cache
+>>>>>>> Dev
