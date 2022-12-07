@@ -71,6 +71,7 @@ namespace gsb_gesAMM_APP
             this.btn_valider.TabIndex = 12;
             this.btn_valider.Text = "VALIDER";
             this.btn_valider.UseVisualStyleBackColor = false;
+            this.btn_valider.Click += new System.EventHandler(this.btn_valider_Click);
             // 
             // label2
             // 

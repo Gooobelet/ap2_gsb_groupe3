@@ -70,3 +70,4 @@ C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_g
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.dll
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.pdb
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.genruntimeconfig.cache
+C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Properties.Resources.resources

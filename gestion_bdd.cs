@@ -88,5 +88,30 @@ namespace gsb_gesAMM_APP
 
             SqlDataRead.Close();
         }
+
+        public bool verifConnexion(string id, string mdp)
+        {
+            bool verifCnx = false;
+            SqlCommand maRequete = new SqlCommand("prc_getUtilisateurs", this.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+            maRequete.ExecuteNonQuery();
+
+            SqlDataReader SqlDataRead = maRequete.ExecuteReader();
+
+            while (SqlDataRead.Read())
+            {
+                string idUti = SqlDataRead["UTI_NOM_UTILISATEUR"].ToString();
+                string mdpUti = SqlDataRead["UTI_MDP_UTILISATEUR"].ToString();
+
+                if (idUti == id && mdpUti == mdp)
+                {
+                    verifCnx = true;
+                }
+            }
+
+            SqlDataRead.Close();
+
+            return verifCnx;
+        }
     }
 }
