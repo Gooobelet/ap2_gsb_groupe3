@@ -20,9 +20,10 @@ namespace gsb_gesAMM_APP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            gestion_bdd bdd = new gestion_bdd("BTS2021-23\\SQLEXPRESS","GSB_gesAMM");
-            bdd.getLesFamilles();
-            bdd.getLesMedicaments();
+            Globale.bdd = new gestion_bdd("DESKTOP-U0QO0RV\\SQLEXPRESS", "GSB_gesAMM");
+            Globale.bdd.getLesFamilles();
+            Globale.bdd.getLesMedicaments();
+            Globale.bdd.getLesDecisions();
         }
     }
 }
