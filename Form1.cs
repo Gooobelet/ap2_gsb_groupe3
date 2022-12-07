@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace gsb_gesAMM_APP
 {
@@ -20,7 +21,7 @@ namespace gsb_gesAMM_APP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Globale.bdd = new gestion_bdd("DESKTOP-D046N3G\\SQLEXPRESS", "GSB_gesAMM");
+            Globale.bdd = new gestion_bdd("DESKTOP-U0QO0RV\\SQLEXPRESS", "GSB_gesAMM");
             Globale.bdd.getLesFamilles();
             Globale.bdd.getLesMedicaments();
             Globale.bdd.getLesDecisions();
@@ -28,11 +29,14 @@ namespace gsb_gesAMM_APP
 
         private void btn_valider_Click(object sender, EventArgs e)
         {
-            string idSaisi = tb_nom_utilisateur.Text;
-            string mdpSaisi = tb_mdp.Text;
-
-            if (idSaisi != "" && mdpSaisi != "")
+            if (tb_nom_utilisateur.Text != "" && tb_mdp.Text != "")
             {
+                string idSaisi = tb_nom_utilisateur.Text;
+
+                var bytes = new UTF8Encoding().GetBytes(tb_mdp.Text);
+                var hash = System.Security.Cryptography.SHA256.Create().ComputeHash(bytes);
+                string mdpSaisi = Convert.ToBase64String(hash);
+
                 if (Globale.bdd.verifConnexion(idSaisi,mdpSaisi))
                 {
 
