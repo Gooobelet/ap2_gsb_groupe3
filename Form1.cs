@@ -35,7 +35,9 @@ namespace gsb_gesAMM_APP
             {
                 if (Globale.bdd.verifConnexion(idSaisi,mdpSaisi))
                 {
-
+                    Form2 obj2 = new Form2();
+                    obj2.Show();
+                    this.Hide();
                 }
                 else
                 {
