@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace gsb_gesAMM_APP
 {
@@ -24,15 +25,21 @@ namespace gsb_gesAMM_APP
             Globale.bdd.getLesFamilles();
             Globale.bdd.getLesMedicaments();
             Globale.bdd.getLesDecisions();
+
+            tb_mdp.PasswordChar = '*';
+            tb_mdp.MaxLength = 14;
         }
 
         private void btn_valider_Click(object sender, EventArgs e)
         {
-            string idSaisi = tb_nom_utilisateur.Text;
-            string mdpSaisi = tb_mdp.Text;
-
-            if (idSaisi != "" && mdpSaisi != "")
+            if (tb_nom_utilisateur.Text != "" && tb_mdp.Text != "")
             {
+                string idSaisi = tb_nom_utilisateur.Text;
+
+                var bytes = new UTF8Encoding().GetBytes(tb_mdp.Text);
+                var hash = System.Security.Cryptography.SHA256.Create().ComputeHash(bytes);
+                string mdpSaisi = Convert.ToBase64String(hash);
+
                 if (Globale.bdd.verifConnexion(idSaisi,mdpSaisi))
                 {
                     Form2 obj2 = new Form2();
@@ -48,6 +55,11 @@ namespace gsb_gesAMM_APP
             {
                 MessageBox.Show("Aucune donnée d'authentification n'a été saisi, veuillez les sasir !", "Erreur : Aucune donnée saisie", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btn_quitter_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

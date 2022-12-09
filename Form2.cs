@@ -20,12 +20,13 @@ namespace gsb_gesAMM_APP
 
         }
 
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        //Cette form s'ouvrira qu'une seule fois
+        private void test1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bool isOpen = false;
-            foreach(Form f in Application.OpenForms)
+            foreach (Form f in Application.OpenForms)
             {
-                if(f.Text == "Form2")
+                if (f.Text == "Form3")
                 {
                     isOpen = true;
                     f.Focus();
@@ -33,11 +34,11 @@ namespace gsb_gesAMM_APP
                 }
             }
 
-            if(isOpen == false)
+            if (isOpen == false)
             {
-                Form2 f2 = new Form2();
-                f2 MdiParent = this;
-                f2.Show();
+                Form3 f3 = new Form3();
+                f3.MdiParent = this;
+                f3.Show();
             }
         }
     }
