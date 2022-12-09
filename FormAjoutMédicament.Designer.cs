@@ -1,7 +1,7 @@
 ﻿
 namespace gsb_gesAMM_APP
 {
-    partial class Form3
+    partial class FormAjoutMédicament
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,19 @@ namespace gsb_gesAMM_APP
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAjoutMédicament));
+            this.SuspendLayout();
+            // 
+            // FormAjoutMédicament
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form3";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FormAjoutMédicament";
+            this.Text = "Ajout d\'un médicament";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

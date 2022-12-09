@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace gsb_gesAMM_APP
 {
-    public partial class Form3 : Form
+    public partial class FormConsultationNombreMedicament : Form
     {
-        public Form3()
+        public FormConsultationNombreMedicament()
         {
             InitializeComponent();
+        }
+
+        private void FormConsultationNombreMedicament_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
