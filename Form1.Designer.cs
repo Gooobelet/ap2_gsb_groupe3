@@ -38,6 +38,7 @@ namespace gsb_gesAMM_APP
             this.lb_connection = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_nom_utilisateur = new System.Windows.Forms.TextBox();
+            this.btn_quitter = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +88,7 @@ namespace gsb_gesAMM_APP
             // 
             this.tb_mdp.Location = new System.Drawing.Point(799, 302);
             this.tb_mdp.Name = "tb_mdp";
+            this.tb_mdp.PasswordChar = '*';
             this.tb_mdp.Size = new System.Drawing.Size(140, 23);
             this.tb_mdp.TabIndex = 10;
             // 
@@ -118,12 +120,25 @@ namespace gsb_gesAMM_APP
             this.tb_nom_utilisateur.Size = new System.Drawing.Size(140, 23);
             this.tb_nom_utilisateur.TabIndex = 7;
             // 
+            // btn_quitter
+            // 
+            this.btn_quitter.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_quitter.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_quitter.Location = new System.Drawing.Point(967, 511);
+            this.btn_quitter.Name = "btn_quitter";
+            this.btn_quitter.Size = new System.Drawing.Size(140, 39);
+            this.btn_quitter.TabIndex = 14;
+            this.btn_quitter.Text = "QUITTER";
+            this.btn_quitter.UseVisualStyleBackColor = false;
+            this.btn_quitter.Click += new System.EventHandler(this.btn_quitter_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1119, 562);
+            this.Controls.Add(this.btn_quitter);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_valider);
             this.Controls.Add(this.label2);
@@ -151,6 +166,7 @@ namespace gsb_gesAMM_APP
         private System.Windows.Forms.Label lb_connection;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_nom_utilisateur;
+        private System.Windows.Forms.Button btn_quitter;
     }
 }
 
