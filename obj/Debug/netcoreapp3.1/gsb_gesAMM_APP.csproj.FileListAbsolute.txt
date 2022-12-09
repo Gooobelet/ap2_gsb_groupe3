@@ -67,6 +67,8 @@ C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_g
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.dll
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.pdb
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.genruntimeconfig.cache
+C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Properties.Resources.resources
+C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Properties.Resources.resources
 D:\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.exe
 D:\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.deps.json
 D:\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\gsb_gesAMM_APP.runtimeconfig.json
@@ -79,10 +81,10 @@ D:\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dl
 D:\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 D:\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\GitHub\ap2_gsb_groupe3\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csproj.AssemblyReference.cache
-D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Form1.resources
-D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Form2.resources
-D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Form3.resources
+D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormAjoutMédicament.resources
+D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConnexion.resources
+D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConsultationNombreMedicament.resources
+D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMenuMDI.resources
 D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Properties.Resources.resources
 D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csproj.GenerateResource.cache
 D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.GeneratedMSBuildEditorConfig.editorconfig

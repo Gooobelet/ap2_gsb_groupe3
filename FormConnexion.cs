@@ -12,16 +12,16 @@ using System.Security.Cryptography;
 
 namespace gsb_gesAMM_APP
 {
-    public partial class Form1 : Form
+    public partial class FormConnexion : Form
     {
-        public Form1()
+        public FormConnexion()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Globale.bdd = new gestion_bdd("BTS2021-23\\SQLEXPRESS", "GSB_gesAMM");
+            Globale.bdd = new gestion_bdd("DESKTOP-D046N3G\\SQLEXPRESS", "GSB_gesAMM");
             Globale.bdd.getLesFamilles();
             Globale.bdd.getLesMedicaments();
             Globale.bdd.getLesDecisions();
@@ -43,7 +43,7 @@ namespace gsb_gesAMM_APP
 
                 if (Globale.bdd.verifConnexion(idSaisi,mdpSaisi))
                 {
-                    Form2 obj2 = new Form2();
+                    FormMenuMDI obj2 = new FormMenuMDI();
                     obj2.Show();
                     this.Hide();
                 }
