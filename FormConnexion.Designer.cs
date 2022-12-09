@@ -1,7 +1,7 @@
 ﻿
 namespace gsb_gesAMM_APP
 {
-    partial class Form1
+    partial class FormConnexion
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace gsb_gesAMM_APP
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConnexion));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_valider = new System.Windows.Forms.Button();
@@ -132,7 +132,7 @@ namespace gsb_gesAMM_APP
             this.btn_quitter.UseVisualStyleBackColor = false;
             this.btn_quitter.Click += new System.EventHandler(this.btn_quitter_Click);
             // 
-            // Form1
+            // FormConnexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,8 +146,9 @@ namespace gsb_gesAMM_APP
             this.Controls.Add(this.lb_connection);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_nom_utilisateur);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FormConnexion";
+            this.Text = "Connexion";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
