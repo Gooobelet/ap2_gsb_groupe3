@@ -25,6 +25,7 @@ namespace gsb_gesAMM_APP
             Globale.bdd.getLesFamilles();
             Globale.bdd.getLesMedicaments();
             Globale.bdd.getLesDecisions();
+            Globale.bdd.getLesEtapes();
 
             tb_mdp.PasswordChar = '*';
             tb_mdp.MaxLength = 14;
