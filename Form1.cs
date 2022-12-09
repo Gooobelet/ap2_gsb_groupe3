@@ -42,7 +42,9 @@ namespace gsb_gesAMM_APP
 
                 if (Globale.bdd.verifConnexion(idSaisi,mdpSaisi))
                 {
-
+                    Form2 obj2 = new Form2();
+                    obj2.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -53,6 +55,11 @@ namespace gsb_gesAMM_APP
             {
                 MessageBox.Show("Aucune donnée d'authentification n'a été saisi, veuillez les sasir !", "Erreur : Aucune donnée saisie", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btn_quitter_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
