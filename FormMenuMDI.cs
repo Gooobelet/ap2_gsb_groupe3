@@ -81,5 +81,26 @@ namespace gsb_gesAMM_APP
         {
             Application.Exit();
         }
+
+        private void saisirLaDécisionDuneÉtapeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "FormSaisieDecision")
+                {
+                    isOpen = true;
+                    f.Focus();
+                    break;
+                }
+            }
+
+            if (isOpen == false)
+            {
+                FormSaisieDecision f5 = new FormSaisieDecision();
+                f5.MdiParent = this;
+                f5.Show();
+            }
+        }
     }
 }

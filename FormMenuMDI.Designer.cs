@@ -33,11 +33,12 @@ namespace gsb_gesAMM_APP
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fermerToutesLesPagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.médicamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreDeMédicamentParFamilleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutDeMédicamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.etapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saisirLaDécisionDuneÉtapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +73,14 @@ namespace gsb_gesAMM_APP
             this.fermerToutesLesPagesToolStripMenuItem.Text = "Fermer toutes les pages";
             this.fermerToutesLesPagesToolStripMenuItem.Click += new System.EventHandler(this.fermerToutesLesPagesToolStripMenuItem_Click_1);
             // 
+            // quitterToolStripMenuItem
+            // 
+            this.quitterToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
+            this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.quitterToolStripMenuItem.Text = "Quitter";
+            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
+            // 
             // médicamentToolStripMenuItem
             // 
             this.médicamentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -100,18 +109,19 @@ namespace gsb_gesAMM_APP
             // 
             // etapeToolStripMenuItem
             // 
+            this.etapeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saisirLaDécisionDuneÉtapeToolStripMenuItem});
             this.etapeToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.etapeToolStripMenuItem.Name = "etapeToolStripMenuItem";
             this.etapeToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.etapeToolStripMenuItem.Text = "Etape";
             // 
-            // quitterToolStripMenuItem
+            // saisirLaDécisionDuneÉtapeToolStripMenuItem
             // 
-            this.quitterToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
-            this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.quitterToolStripMenuItem.Text = "Quitter";
-            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
+            this.saisirLaDécisionDuneÉtapeToolStripMenuItem.Name = "saisirLaDécisionDuneÉtapeToolStripMenuItem";
+            this.saisirLaDécisionDuneÉtapeToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.saisirLaDécisionDuneÉtapeToolStripMenuItem.Text = "Saisir la décision d\'une étape";
+            this.saisirLaDécisionDuneÉtapeToolStripMenuItem.Click += new System.EventHandler(this.saisirLaDécisionDuneÉtapeToolStripMenuItem_Click);
             // 
             // FormMenuMDI
             // 
@@ -143,5 +153,6 @@ namespace gsb_gesAMM_APP
         private System.Windows.Forms.ToolStripMenuItem ajoutDeMédicamentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fermerToutesLesPagesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saisirLaDécisionDuneÉtapeToolStripMenuItem;
     }
 }
