@@ -62,6 +62,11 @@ namespace gsb_gesAMM_APP
             return this.fam_med_code;
         }
 
+        public List<Workflow> getLesEtapes()
+        {
+            return this.lesEtapes;
+        }
+
         public void setDepotLegal(string leDepotLegal)
         {
             this.med_depotlegal = leDepotLegal;
@@ -95,6 +100,11 @@ namespace gsb_gesAMM_APP
         public void setFamMed(string laFamille)
         {
             this.fam_med_code = laFamille;
+        }
+
+        public void ajoutEtapeMed(Workflow uneEtape)
+        {
+            this.lesEtapes.Add(uneEtape);
         }
     }
 }
