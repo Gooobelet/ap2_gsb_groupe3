@@ -32,11 +32,12 @@ namespace gsb_gesAMM_APP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuMDI));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fermerToutesLesPagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.médicamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreDeMédicamentParFamilleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutDeMédicamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.etapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fermerToutesLesPagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,11 +57,20 @@ namespace gsb_gesAMM_APP
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fermerToutesLesPagesToolStripMenuItem});
+            this.fermerToutesLesPagesToolStripMenuItem,
+            this.quitterToolStripMenuItem});
             this.menuToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // fermerToutesLesPagesToolStripMenuItem
+            // 
+            this.fermerToutesLesPagesToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
+            this.fermerToutesLesPagesToolStripMenuItem.Name = "fermerToutesLesPagesToolStripMenuItem";
+            this.fermerToutesLesPagesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.fermerToutesLesPagesToolStripMenuItem.Text = "Fermer toutes les pages";
+            this.fermerToutesLesPagesToolStripMenuItem.Click += new System.EventHandler(this.fermerToutesLesPagesToolStripMenuItem_Click_1);
             // 
             // médicamentToolStripMenuItem
             // 
@@ -95,12 +105,13 @@ namespace gsb_gesAMM_APP
             this.etapeToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.etapeToolStripMenuItem.Text = "Etape";
             // 
-            // fermerToutesLesPagesToolStripMenuItem
+            // quitterToolStripMenuItem
             // 
-            this.fermerToutesLesPagesToolStripMenuItem.Name = "fermerToutesLesPagesToolStripMenuItem";
-            this.fermerToutesLesPagesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.fermerToutesLesPagesToolStripMenuItem.Text = "Fermer toutes les pages";
-            this.fermerToutesLesPagesToolStripMenuItem.Click += new System.EventHandler(this.fermerToutesLesPagesToolStripMenuItem_Click_1);
+            this.quitterToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
+            this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.quitterToolStripMenuItem.Text = "Quitter";
+            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // FormMenuMDI
             // 
@@ -131,5 +142,6 @@ namespace gsb_gesAMM_APP
         private System.Windows.Forms.ToolStripMenuItem nombreDeMédicamentParFamilleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajoutDeMédicamentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fermerToutesLesPagesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
     }
 }
