@@ -119,6 +119,61 @@ namespace gsb_gesAMM_APP
             SqlDataRead.Close();
         }
 
+        public void getLesWorkflows()
+        {
+            SqlCommand maRequete = new SqlCommand("prc_getWorkflows", this.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+            maRequete.ExecuteNonQuery();
+
+            SqlDataReader SqlDataRead = maRequete.ExecuteReader();
+
+            while (SqlDataRead.Read())
+            {
+                Etape uneEtape = null;
+                Decision uneDecision = null;
+                DateTime uneDateDec = DateTime.MaxValue;
+                bool trouve = false;
+                int idx = 0;
+
+                while (!trouve && idx < Globale.lesEtapes.Count)
+                {
+                    if (Globale.lesEtapes[idx].getNum() == Convert.ToInt32(SqlDataRead["numEtape"]))
+                    {
+                        uneEtape = Globale.lesEtapes[idx];
+                        trouve = true;
+                    }
+                    else
+                    {
+                        idx++;
+                    }
+                }
+
+                if (SqlDataRead["idDecision"].ToString() != "")
+                {
+                    bool trouveDec = false;
+                    int idxDec = 0;
+
+                    while (!trouveDec && idxDec < Globale.lesDecisions.Count)
+                    {
+                        if (Globale.lesDecisions[idxDec].getLeId() == Convert.ToInt32(SqlDataRead["idDecision"]))
+                        {
+                            uneDecision = Globale.lesDecisions[idxDec];
+                            uneDateDec = Convert.ToDateTime(SqlDataRead["dateDecision"]);
+                            trouveDec = true;
+                        }
+                        else
+                        {
+                            idxDec++;
+                        }
+                    }
+                }
+
+                Globale.lesMedicaments[Convert.ToString(SqlDataRead["MED_DL"])].ajoutEtapeMed(new Workflow(uneDateDec, uneEtape, uneDecision));
+            }
+
+            SqlDataRead.Close();
+        }
+
         public bool verifConnexion(string id, string mdp)
         {
             bool verifCnx = false;
