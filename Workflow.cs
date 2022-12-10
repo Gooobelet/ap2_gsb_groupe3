@@ -7,14 +7,14 @@ namespace gsb_gesAMM_APP
     class Workflow
     {
         private DateTime dateDecision;
-        private int numEtape;
-        private int idDecision;
+        private Etape uneEtape;
+        private Decision uneDecision;
 
-        public Workflow(DateTime laDateDecision, int leNumEtap, int leIdDecision)
+        public Workflow(DateTime laDateDecision, Etape lEtape, Decision laDecision)
         {
             this.dateDecision = laDateDecision;
-            this.numEtape = leNumEtap;
-            this.idDecision = leIdDecision;
+            this.uneEtape = lEtape;
+            this.uneDecision = laDecision;
         }
 
         public DateTime getDateDecision()
@@ -22,14 +22,14 @@ namespace gsb_gesAMM_APP
             return this.dateDecision;
         }
 
-        public int getNumEtape()
+        public Etape getEtape()
         {
-            return this.numEtape;
+            return this.uneEtape;
         }
 
-        public int getIdDecision()
+        public Decision getDecision()
         {
-            return this.idDecision;
+            return this.uneDecision;
         }
 
         public void setDateDecision(DateTime laDateDecision)
@@ -37,14 +37,14 @@ namespace gsb_gesAMM_APP
             this.dateDecision = laDateDecision;
         }
 
-        public void setNumEtape(int leNumEtape)
+        public void setEtape(Etape lEtape)
         {
-            this.numEtape = leNumEtape;
+            this.uneEtape = lEtape;
         }
 
-        public void setIdDecision(int leIdDecision)
+        public void setDecision(Decision laDecision)
         {
-            this.idDecision = leIdDecision;
+            this.uneDecision = laDecision;
         }
     }
 }
