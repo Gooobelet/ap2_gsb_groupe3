@@ -15,11 +15,6 @@ namespace gsb_gesAMM_APP
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         //Cette form s'ouvrira qu'une seule fois
         private void nombreDeMédicamentParFamilleToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -100,6 +95,28 @@ namespace gsb_gesAMM_APP
                 FormSaisieDecision f5 = new FormSaisieDecision();
                 f5.MdiParent = this;
                 f5.Show();
+            }
+        }
+
+        private void consulterEtapeParMedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "FormConsultationEtapesWorkflow")
+                {
+                    MessageBox.Show("Test");
+                    isOpen = true;
+                    f.Focus();
+                    break;
+                }
+            }
+
+            if (isOpen == false)
+            {
+                FormConsultationEtapesWorkflow f6 = new FormConsultationEtapesWorkflow();
+                f6.MdiParent = this;
+                f6.Show();
             }
         }
     }

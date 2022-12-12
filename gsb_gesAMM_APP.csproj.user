@@ -4,6 +4,9 @@
     <Compile Update="FormConnexion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormConsultationEtapesWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormMenuMDI.cs">
       <SubType>Form</SubType>
     </Compile>
