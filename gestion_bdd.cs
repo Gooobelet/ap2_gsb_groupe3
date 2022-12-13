@@ -195,8 +195,8 @@ namespace gsb_gesAMM_APP
 
             while (SqlDataRead.Read())
             {
-                string idUti = SqlDataRead["nomUtilisateur"].ToString();
-                string mdpUti = SqlDataRead["mdpUtilisateur"].ToString();
+                string idUti = SqlDataRead["UTI_NOM_UTILISATEUR"].ToString();
+                string mdpUti = SqlDataRead["UTI_MDP_UTILISATEUR"].ToString();
 
                 if (idUti == id && mdpUti == mdp)
                 {

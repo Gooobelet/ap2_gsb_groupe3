@@ -44,18 +44,19 @@ namespace gsb_gesAMM_APP
             // cB_Med
             // 
             this.cB_Med.FormattingEnabled = true;
-            this.cB_Med.Location = new System.Drawing.Point(315, 104);
+            this.cB_Med.Location = new System.Drawing.Point(336, 53);
+            this.cB_Med.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cB_Med.Name = "cB_Med";
-            this.cB_Med.Size = new System.Drawing.Size(151, 28);
+            this.cB_Med.Size = new System.Drawing.Size(133, 23);
             this.cB_Med.TabIndex = 0;
             this.cB_Med.SelectedIndexChanged += new System.EventHandler(this.cB_Med_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(210, 107);
+            this.label1.Location = new System.Drawing.Point(244, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 20);
+            this.label1.Size = new System.Drawing.Size(80, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Médicament :";
             // 
@@ -69,9 +70,10 @@ namespace gsb_gesAMM_APP
             this.columnHeader5,
             this.columnHeader6});
             this.lV_EtapeWorkflow.HideSelection = false;
-            this.lV_EtapeWorkflow.Location = new System.Drawing.Point(22, 171);
+            this.lV_EtapeWorkflow.Location = new System.Drawing.Point(19, 128);
+            this.lV_EtapeWorkflow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lV_EtapeWorkflow.Name = "lV_EtapeWorkflow";
-            this.lV_EtapeWorkflow.Size = new System.Drawing.Size(755, 121);
+            this.lV_EtapeWorkflow.Size = new System.Drawing.Size(745, 286);
             this.lV_EtapeWorkflow.TabIndex = 2;
             this.lV_EtapeWorkflow.UseCompatibleStateImageBehavior = false;
             this.lV_EtapeWorkflow.View = System.Windows.Forms.View.Details;
@@ -109,21 +111,22 @@ namespace gsb_gesAMM_APP
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(300, 148);
+            this.label2.Location = new System.Drawing.Point(322, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 20);
+            this.label2.Size = new System.Drawing.Size(145, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Etape(s) par médicament :";
             // 
             // FormConsultationEtapesWorkflow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 326);
+            this.ClientSize = new System.Drawing.Size(792, 449);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lV_EtapeWorkflow);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cB_Med);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormConsultationEtapesWorkflow";
             this.Text = "FormConsultationEtapesWorkflow";
             this.Load += new System.EventHandler(this.FormConsultationEtapesWorkflow_Load);
