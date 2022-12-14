@@ -105,7 +105,6 @@ namespace gsb_gesAMM_APP
             {
                 if (f.Text == "FormConsultationEtapesWorkflow")
                 {
-                    MessageBox.Show("Test");
                     isOpen = true;
                     f.Focus();
                     break;
@@ -117,6 +116,27 @@ namespace gsb_gesAMM_APP
                 FormConsultationEtapesWorkflow f6 = new FormConsultationEtapesWorkflow();
                 f6.MdiParent = this;
                 f6.Show();
+            }
+        }
+
+        private void miseÀJourDesÉtapesNorméesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "FormMaJEtapeNormee")
+                {
+                    isOpen = true;
+                    f.Focus();
+                    break;
+                }
+            }
+
+            if (isOpen == false)
+            {
+                FormMaJEtapeNormee f7 = new FormMaJEtapeNormee();
+                f7.MdiParent = this;
+                f7.Show();
             }
         }
     }

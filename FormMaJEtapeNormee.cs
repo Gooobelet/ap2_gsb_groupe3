@@ -14,5 +14,10 @@ namespace gsb_gesAMM_APP
         {
             InitializeComponent();
         }
+
+        private void btn_modifierNorme_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
