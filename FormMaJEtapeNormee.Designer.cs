@@ -62,6 +62,7 @@ namespace gsb_gesAMM_APP
             this.cB_EtapeNormee.Name = "cB_EtapeNormee";
             this.cB_EtapeNormee.Size = new System.Drawing.Size(121, 23);
             this.cB_EtapeNormee.TabIndex = 1;
+            this.cB_EtapeNormee.SelectedIndexChanged += new System.EventHandler(this.cB_EtapeNormee_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -170,6 +171,7 @@ namespace gsb_gesAMM_APP
             this.Controls.Add(this.label1);
             this.Name = "FormMaJEtapeNormee";
             this.Text = "FormMaJEtapeNormee";
+            this.Load += new System.EventHandler(this.FormMaJEtapeNormee_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

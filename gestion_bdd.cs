@@ -233,5 +233,51 @@ namespace gsb_gesAMM_APP
 
             maRequete.ExecuteNonQuery();
         }
+
+        public void setMaJEtapeNormee(int numEtape, string laNorme, DateTime laDateNorme)
+        {
+            SqlCommand maRequete = new SqlCommand("prc_maj_etapenormee", this.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            SqlParameter paramNumEtape = new SqlParameter("@numEtape", System.Data.SqlDbType.Int);
+            paramNumEtape.Value = numEtape;
+
+            SqlParameter paramNorme = new SqlParameter("@etpNorme", System.Data.SqlDbType.VarChar, 20);
+            paramNorme.Value = laNorme;
+
+            SqlParameter paramDateNorme = new SqlParameter("@etpNormeDate", System.Data.SqlDbType.DateTime);
+            paramDateNorme.Value = laDateNorme;
+
+            maRequete.Parameters.Add(paramNumEtape);
+            maRequete.Parameters.Add(paramNorme);
+            maRequete.Parameters.Add(paramDateNorme);
+
+            maRequete.ExecuteNonQuery();
+        }
+
+        public void getHistModifEtpNormee()
+        {
+            Globale.lhistoModifEtpNormee = new List<HistoModifEtpNormee>();
+
+            SqlCommand maRequete = new SqlCommand("prc_getHistoModifEtpNormee", this.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+            maRequete.ExecuteNonQuery();
+
+            SqlDataReader SqlDataRead = maRequete.ExecuteReader();
+
+            while (SqlDataRead.Read())
+            {
+                int idModif = Convert.ToInt32(SqlDataRead["idModif"]);
+                DateTime dateModif = Convert.ToDateTime(SqlDataRead["dateModif"]);
+                string libelle = SqlDataRead["etpLibelle"].ToString();
+                string norme = SqlDataRead["etpNorme"].ToString();
+                DateTime dateNorme = Convert.ToDateTime(SqlDataRead["etpDateNorme"]);
+
+
+                Globale.lhistoModifEtpNormee.Add(new HistoModifEtpNormee(idModif, dateModif, libelle, norme, dateNorme ));
+            }
+
+            SqlDataRead.Close();
+        }
     }
 }

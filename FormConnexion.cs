@@ -27,6 +27,7 @@ namespace gsb_gesAMM_APP
             Globale.bdd.getLesDecisions();
             Globale.bdd.getLesEtapes();
             Globale.bdd.getLesWorkflows();
+            Globale.bdd.getHistModifEtpNormee();
 
             tb_mdp.PasswordChar = '*';
             tb_mdp.MaxLength = 14;
