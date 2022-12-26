@@ -54,9 +54,11 @@ namespace gsb_gesAMM_APP
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(244, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 15);
+            this.label1.Size = new System.Drawing.Size(83, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Médicament :";
             // 
@@ -70,7 +72,7 @@ namespace gsb_gesAMM_APP
             this.columnHeader5,
             this.columnHeader6});
             this.lV_EtapeWorkflow.HideSelection = false;
-            this.lV_EtapeWorkflow.Location = new System.Drawing.Point(19, 128);
+            this.lV_EtapeWorkflow.Location = new System.Drawing.Point(26, 112);
             this.lV_EtapeWorkflow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lV_EtapeWorkflow.Name = "lV_EtapeWorkflow";
             this.lV_EtapeWorkflow.Size = new System.Drawing.Size(745, 286);
@@ -111,9 +113,11 @@ namespace gsb_gesAMM_APP
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(322, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 15);
+            this.label2.Size = new System.Drawing.Size(151, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Etape(s) par médicament :";
             // 
@@ -121,7 +125,8 @@ namespace gsb_gesAMM_APP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 449);
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClientSize = new System.Drawing.Size(792, 421);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lV_EtapeWorkflow);
             this.Controls.Add(this.label1);

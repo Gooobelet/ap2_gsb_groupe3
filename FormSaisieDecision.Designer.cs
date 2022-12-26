@@ -62,7 +62,7 @@ namespace gsb_gesAMM_APP
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(229, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 15);
+            this.label1.Size = new System.Drawing.Size(83, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Médicament :";
             // 
@@ -83,6 +83,7 @@ namespace gsb_gesAMM_APP
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.lV_EtapesValid.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lV_EtapesValid.HideSelection = false;
             this.lV_EtapesValid.Location = new System.Drawing.Point(95, 126);
             this.lV_EtapesValid.Name = "lV_EtapesValid";
@@ -124,7 +125,8 @@ namespace gsb_gesAMM_APP
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.tB_numEtape);
-            this.groupBox1.Location = new System.Drawing.Point(120, 241);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(122, 238);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(485, 100);
             this.groupBox1.TabIndex = 3;
@@ -144,7 +146,7 @@ namespace gsb_gesAMM_APP
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(363, 28);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 15);
+            this.label7.Size = new System.Drawing.Size(109, 15);
             this.label7.TabIndex = 12;
             this.label7.Text = "Date de la norme :";
             // 
@@ -161,7 +163,7 @@ namespace gsb_gesAMM_APP
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(285, 28);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 15);
+            this.label6.Size = new System.Drawing.Size(52, 15);
             this.label6.TabIndex = 10;
             this.label6.Text = "Norme :";
             // 
@@ -178,7 +180,7 @@ namespace gsb_gesAMM_APP
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(81, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 15);
+            this.label5.Size = new System.Drawing.Size(49, 15);
             this.label5.TabIndex = 8;
             this.label5.Text = "Libellé :";
             // 
@@ -187,7 +189,7 @@ namespace gsb_gesAMM_APP
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(18, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 15);
+            this.label3.Size = new System.Drawing.Size(59, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Numéro :";
             // 
@@ -204,7 +206,7 @@ namespace gsb_gesAMM_APP
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(242, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 15);
+            this.label2.Size = new System.Drawing.Size(192, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Etape(s) précédement validée(s) :";
             // 
@@ -215,21 +217,25 @@ namespace gsb_gesAMM_APP
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.dTP_dateDec);
             this.groupBox2.Controls.Add(this.cB_etatDec);
-            this.groupBox2.Location = new System.Drawing.Point(131, 356);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(122, 353);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(474, 120);
+            this.groupBox2.Size = new System.Drawing.Size(485, 120);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ajout de la décision";
             // 
             // btn_ajouterDec
             // 
+            this.btn_ajouterDec.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_ajouterDec.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_ajouterDec.ForeColor = System.Drawing.Color.White;
             this.btn_ajouterDec.Location = new System.Drawing.Point(205, 89);
             this.btn_ajouterDec.Name = "btn_ajouterDec";
             this.btn_ajouterDec.Size = new System.Drawing.Size(75, 23);
             this.btn_ajouterDec.TabIndex = 11;
             this.btn_ajouterDec.Text = "Ajouter";
-            this.btn_ajouterDec.UseVisualStyleBackColor = true;
+            this.btn_ajouterDec.UseVisualStyleBackColor = false;
             this.btn_ajouterDec.Click += new System.EventHandler(this.btn_ajouterDec_Click);
             // 
             // label9
@@ -237,7 +243,7 @@ namespace gsb_gesAMM_APP
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(212, 50);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 15);
+            this.label9.Size = new System.Drawing.Size(40, 15);
             this.label9.TabIndex = 10;
             this.label9.Text = "Date :";
             // 
@@ -246,12 +252,13 @@ namespace gsb_gesAMM_APP
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(20, 53);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 15);
+            this.label8.Size = new System.Drawing.Size(35, 15);
             this.label8.TabIndex = 9;
             this.label8.Text = "Etat :";
             // 
             // dTP_dateDec
             // 
+            this.dTP_dateDec.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dTP_dateDec.Location = new System.Drawing.Point(251, 47);
             this.dTP_dateDec.Name = "dTP_dateDec";
             this.dTP_dateDec.Size = new System.Drawing.Size(200, 23);
@@ -269,6 +276,7 @@ namespace gsb_gesAMM_APP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(800, 488);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
@@ -276,6 +284,8 @@ namespace gsb_gesAMM_APP
             this.Controls.Add(this.lV_EtapesValid);
             this.Controls.Add(this.cB_Medicament);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "FormSaisieDecision";
             this.Text = "FormSaisieDecision";
             this.Load += new System.EventHandler(this.FormSaisieDecision_Load);

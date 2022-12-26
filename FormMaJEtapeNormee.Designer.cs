@@ -49,9 +49,11 @@ namespace gsb_gesAMM_APP
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(268, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 15);
+            this.label1.Size = new System.Drawing.Size(91, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Etape normée :";
             // 
@@ -69,7 +71,7 @@ namespace gsb_gesAMM_APP
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 15);
+            this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Norme :";
             // 
@@ -78,7 +80,7 @@ namespace gsb_gesAMM_APP
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(171, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 15);
+            this.label3.Size = new System.Drawing.Size(109, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "Date de la norme :";
             // 
@@ -91,6 +93,7 @@ namespace gsb_gesAMM_APP
             // 
             // dTP_dateNorme
             // 
+            this.dTP_dateNorme.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dTP_dateNorme.Location = new System.Drawing.Point(171, 53);
             this.dTP_dateNorme.Name = "dTP_dateNorme";
             this.dTP_dateNorme.Size = new System.Drawing.Size(200, 23);
@@ -103,6 +106,8 @@ namespace gsb_gesAMM_APP
             this.groupBox1.Controls.Add(this.dTP_dateNorme);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(161, 72);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(397, 129);
@@ -112,12 +117,15 @@ namespace gsb_gesAMM_APP
             // 
             // btn_modifierNorme
             // 
+            this.btn_modifierNorme.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_modifierNorme.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_modifierNorme.ForeColor = System.Drawing.Color.White;
             this.btn_modifierNorme.Location = new System.Drawing.Point(161, 91);
             this.btn_modifierNorme.Name = "btn_modifierNorme";
             this.btn_modifierNorme.Size = new System.Drawing.Size(75, 23);
             this.btn_modifierNorme.TabIndex = 7;
             this.btn_modifierNorme.Text = "Modifer";
-            this.btn_modifierNorme.UseVisualStyleBackColor = true;
+            this.btn_modifierNorme.UseVisualStyleBackColor = false;
             this.btn_modifierNorme.Click += new System.EventHandler(this.btn_modifierNorme_Click);
             // 
             // lV_historiqueModif
@@ -164,6 +172,7 @@ namespace gsb_gesAMM_APP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(800, 438);
             this.Controls.Add(this.lV_historiqueModif);
             this.Controls.Add(this.groupBox1);
