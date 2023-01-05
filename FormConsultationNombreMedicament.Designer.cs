@@ -58,14 +58,17 @@ namespace gsb_gesAMM_APP
             // colH_code_famille
             // 
             this.colH_code_famille.Text = "Code de la Famille";
+            this.colH_code_famille.Width = 120;
             // 
             // colH_designation_famille
             // 
             this.colH_designation_famille.Text = "Désignation de la famille";
+            this.colH_designation_famille.Width = 150;
             // 
             // colH_nb_médicament
             // 
             this.colH_nb_médicament.Text = "Nombre de médicaments autorisés";
+            this.colH_nb_médicament.Width = 200;
             // 
             // label1
             // 
@@ -80,10 +83,12 @@ namespace gsb_gesAMM_APP
             // 
             // lv_médicament
             // 
+            this.lv_médicament.Activation = System.Windows.Forms.ItemActivation.OneClick;
             this.lv_médicament.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colH_code_famille_médicament,
             this.colH_nom_médicament});
             this.lv_médicament.HideSelection = false;
+            this.lv_médicament.HoverSelection = true;
             this.lv_médicament.Location = new System.Drawing.Point(553, 54);
             this.lv_médicament.Name = "lv_médicament";
             this.lv_médicament.Size = new System.Drawing.Size(519, 419);
@@ -95,11 +100,13 @@ namespace gsb_gesAMM_APP
             // 
             this.colH_code_famille_médicament.DisplayIndex = 1;
             this.colH_code_famille_médicament.Text = "Code de la famille";
+            this.colH_code_famille_médicament.Width = 120;
             // 
             // colH_nom_médicament
             // 
             this.colH_nom_médicament.DisplayIndex = 0;
-            this.colH_nom_médicament.Text = "Nom commerciale du médicament";
+            this.colH_nom_médicament.Text = "Nombre de médicament autorisé";
+            this.colH_nom_médicament.Width = 200;
             // 
             // FormConsultationNombreMedicament
             // 

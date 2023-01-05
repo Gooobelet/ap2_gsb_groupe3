@@ -86,6 +86,8 @@ namespace gsb_gesAMM_APP
             // 
             // tb_mdp
             // 
+            this.tb_mdp.AcceptsReturn = true;
+            this.tb_mdp.AcceptsTab = true;
             this.tb_mdp.Location = new System.Drawing.Point(799, 302);
             this.tb_mdp.Name = "tb_mdp";
             this.tb_mdp.PasswordChar = '*';
@@ -115,6 +117,8 @@ namespace gsb_gesAMM_APP
             // 
             // tb_nom_utilisateur
             // 
+            this.tb_nom_utilisateur.AcceptsReturn = true;
+            this.tb_nom_utilisateur.AcceptsTab = true;
             this.tb_nom_utilisateur.Location = new System.Drawing.Point(799, 264);
             this.tb_nom_utilisateur.Name = "tb_nom_utilisateur";
             this.tb_nom_utilisateur.Size = new System.Drawing.Size(140, 23);
