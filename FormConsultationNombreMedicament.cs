@@ -17,23 +17,18 @@ namespace gsb_gesAMM_APP
 
         private void FormConsultationNombreMedicament_Load(object sender, EventArgs e)
         {
+            lv_famille.Items.Clear();
             Dictionary<string, Famille>.KeyCollection lesClesFamille = Globale.lesFamilles.Keys;
-            Dictionary<string, Medicament>.KeyCollection lesClesMedicaments = Globale.lesMedicaments.Keys;
 
             foreach(string lacle in lesClesFamille)
             {
-                foreach(string laclemed in lesClesMedicaments)
-                {
-                    Medicament unMedicament = Globale.lesMedicaments[laclemed];
                     Famille uneFamille = Globale.lesFamilles[lacle];
 
                     ListViewItem laLigne = new ListViewItem();
                     laLigne.Text = uneFamille.getCode();
                     laLigne.SubItems.Add(uneFamille.getLibelle());
-                    laLigne.SubItems.Add(unMedicament.getComposition());
 
                 lv_famille.Items.Add(laLigne);
-                }
             }
 
 
@@ -41,14 +36,20 @@ namespace gsb_gesAMM_APP
 
         private void lv_famille_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-        }
+            string numLigClic = lv_famille.Items[lv_famille.FocusedItem.Index].Text;
 
-        private void lv_médicament_Click(object sender, EventArgs e)
-        {
-            int numLigClic = lv_médicament.SelectedIndices[0];
+            lv_médicament.Items.Clear();
+            foreach(Medicament med in Globale.lesMedicaments.Values)
+            {
+                if(med.getFamMed() == numLigClic)
+                {
+                    ListViewItem ligne = new ListViewItem();
+                    ligne.Text = med.getFamMed();
+                    
 
-            lv_famille.Items.Clear();
+                    lv_médicament.Items.Add(ligne);
+                }
+            }
             
         }
     }

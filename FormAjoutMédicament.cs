@@ -14,5 +14,20 @@ namespace gsb_gesAMM_APP
         {
             InitializeComponent();
         }
+
+        private void FormAjoutMédicament_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ajouter_med_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_code_famille_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
