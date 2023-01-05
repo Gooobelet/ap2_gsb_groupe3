@@ -56,8 +56,18 @@ namespace gsb_gesAMM_APP
             {
                 string code = SqlDataRead["FAM_CODE"].ToString();
                 string libelle = SqlDataRead["FAM_LIBELLE"].ToString();
+                int nbMedAut;
 
-                Globale.lesFamilles.Add(code, new Famille(code, libelle));
+                if (SqlDataRead["nbMedAutorisé"].ToString() == "")
+                {
+                    nbMedAut = 0;
+                }
+                else
+                {
+                    nbMedAut = Convert.ToInt32(SqlDataRead["nbMedAutorisé"]);
+                }
+
+                Globale.lesFamilles.Add(code, new Famille(code, libelle,nbMedAut));
             }
 
             SqlDataRead.Close();
@@ -197,6 +207,77 @@ namespace gsb_gesAMM_APP
             SqlDataRead.Close();
 
             return verifCnx;
+        }
+
+        public void setDecisionEtape(int numEtape, string medDL, DateTime dateDec, int idDec)
+        {
+            SqlCommand maRequete = new SqlCommand("prc_setDecisionEtape", this.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            SqlParameter paramNumEtape = new SqlParameter("@numEtape", System.Data.SqlDbType.Int);
+            paramNumEtape.Value = numEtape;
+
+            SqlParameter paramMedDL = new SqlParameter("@medDL", System.Data.SqlDbType.VarChar, 100);
+            paramMedDL.Value = medDL;
+
+            SqlParameter paramDateDec = new SqlParameter("@dateDec", System.Data.SqlDbType.DateTime);
+            paramDateDec.Value = dateDec;
+
+            SqlParameter paramIdDec = new SqlParameter("@idDec", System.Data.SqlDbType.Int);
+            paramIdDec.Value = idDec;
+
+            maRequete.Parameters.Add(paramNumEtape);
+            maRequete.Parameters.Add(paramMedDL);
+            maRequete.Parameters.Add(paramIdDec);
+            maRequete.Parameters.Add(paramDateDec);
+
+            maRequete.ExecuteNonQuery();
+        }
+
+        public void setMaJEtapeNormee(int numEtape, string laNorme, DateTime laDateNorme)
+        {
+            SqlCommand maRequete = new SqlCommand("prc_maj_etapenormee", this.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            SqlParameter paramNumEtape = new SqlParameter("@numEtape", System.Data.SqlDbType.Int);
+            paramNumEtape.Value = numEtape;
+
+            SqlParameter paramNorme = new SqlParameter("@etpNorme", System.Data.SqlDbType.VarChar, 20);
+            paramNorme.Value = laNorme;
+
+            SqlParameter paramDateNorme = new SqlParameter("@etpNormeDate", System.Data.SqlDbType.DateTime);
+            paramDateNorme.Value = laDateNorme;
+
+            maRequete.Parameters.Add(paramNumEtape);
+            maRequete.Parameters.Add(paramNorme);
+            maRequete.Parameters.Add(paramDateNorme);
+
+            maRequete.ExecuteNonQuery();
+        }
+
+        public void getHistModifEtpNormee()
+        {
+            Globale.lhistoModifEtpNormee = new List<HistoModifEtpNormee>();
+
+            SqlCommand maRequete = new SqlCommand("prc_getHistoModifEtpNormee", this.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+            maRequete.ExecuteNonQuery();
+
+            SqlDataReader SqlDataRead = maRequete.ExecuteReader();
+
+            while (SqlDataRead.Read())
+            {
+                int idModif = Convert.ToInt32(SqlDataRead["idModif"]);
+                DateTime dateModif = Convert.ToDateTime(SqlDataRead["dateModif"]);
+                string libelle = SqlDataRead["etpLibelle"].ToString();
+                string norme = SqlDataRead["etpNorme"].ToString();
+                DateTime dateNorme = Convert.ToDateTime(SqlDataRead["etpDateNorme"]);
+
+
+                Globale.lhistoModifEtpNormee.Add(new HistoModifEtpNormee(idModif, dateModif, libelle, norme, dateNorme ));
+            }
+
+            SqlDataRead.Close();
         }
     }
 }

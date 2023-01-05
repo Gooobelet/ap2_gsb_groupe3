@@ -4,6 +4,12 @@
     <Compile Update="FormConnexion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormConsultationEtapesWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMaJEtapeNormee.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormMenuMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -11,6 +17,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormConsultationNombreMedicament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormSaisieDecision.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
