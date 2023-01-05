@@ -10,6 +10,7 @@ namespace gsb_gesAMM_APP
         public static Dictionary<string, Medicament> lesMedicaments;
         public static List<Etape> lesEtapes;
         public static List<Decision> lesDecisions;
+        public static List<HistoModifEtpNormee> lhistoModifEtpNormee;
         public static gestion_bdd bdd;
     }
 }

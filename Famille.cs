@@ -8,11 +8,13 @@ namespace gsb_gesAMM_APP
     {
         private string fam_code;
         private string fam_libelle;
+        private int fam_nb_med_aut;
 
-        public Famille(string code, string libelle)
+        public Famille(string code, string libelle, int nbMedAut)
         {
             this.fam_code = code;
             this.fam_libelle = libelle;
+            this.fam_nb_med_aut = nbMedAut;
         }
 
         public string getCode()
@@ -25,6 +27,11 @@ namespace gsb_gesAMM_APP
             return this.fam_libelle;
         }
 
+        public int getNbMedAut()
+        {
+            return this.fam_nb_med_aut;
+        }
+
         public void setCode(string leCode)
         {
             this.fam_code = leCode;
@@ -33,6 +40,11 @@ namespace gsb_gesAMM_APP
         public void setLibelle(string leLibelle)
         {
             this.fam_libelle = leLibelle;
+        }
+
+        public void setNbMedAut(int leNbMedAut)
+        {
+            this.fam_nb_med_aut = leNbMedAut;
         }
     }
 }
