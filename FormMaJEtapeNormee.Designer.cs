@@ -29,6 +29,7 @@ namespace gsb_gesAMM_APP
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMaJEtapeNormee));
             this.label1 = new System.Windows.Forms.Label();
             this.cB_EtapeNormee = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,52 +52,56 @@ namespace gsb_gesAMM_APP
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(268, 28);
+            this.label1.Location = new System.Drawing.Point(306, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 15);
+            this.label1.Size = new System.Drawing.Size(114, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Etape normée :";
             // 
             // cB_EtapeNormee
             // 
             this.cB_EtapeNormee.FormattingEnabled = true;
-            this.cB_EtapeNormee.Location = new System.Drawing.Point(361, 25);
+            this.cB_EtapeNormee.Location = new System.Drawing.Point(417, 34);
+            this.cB_EtapeNormee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cB_EtapeNormee.Name = "cB_EtapeNormee";
-            this.cB_EtapeNormee.Size = new System.Drawing.Size(121, 23);
+            this.cB_EtapeNormee.Size = new System.Drawing.Size(138, 28);
             this.cB_EtapeNormee.TabIndex = 1;
             this.cB_EtapeNormee.SelectedIndexChanged += new System.EventHandler(this.cB_EtapeNormee_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 35);
+            this.label2.Location = new System.Drawing.Point(17, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.Size = new System.Drawing.Size(66, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Norme :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(171, 35);
+            this.label3.Location = new System.Drawing.Point(195, 47);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 15);
+            this.label3.Size = new System.Drawing.Size(137, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Date de la norme :";
             // 
             // tB_Norme
             // 
-            this.tB_Norme.Location = new System.Drawing.Point(15, 53);
+            this.tB_Norme.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tB_Norme.Location = new System.Drawing.Point(17, 71);
+            this.tB_Norme.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tB_Norme.Name = "tB_Norme";
-            this.tB_Norme.Size = new System.Drawing.Size(132, 23);
+            this.tB_Norme.Size = new System.Drawing.Size(150, 27);
             this.tB_Norme.TabIndex = 4;
             // 
             // dTP_dateNorme
             // 
             this.dTP_dateNorme.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dTP_dateNorme.Location = new System.Drawing.Point(171, 53);
+            this.dTP_dateNorme.Location = new System.Drawing.Point(195, 71);
+            this.dTP_dateNorme.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dTP_dateNorme.Name = "dTP_dateNorme";
-            this.dTP_dateNorme.Size = new System.Drawing.Size(200, 23);
+            this.dTP_dateNorme.Size = new System.Drawing.Size(228, 27);
             this.dTP_dateNorme.TabIndex = 5;
             // 
             // groupBox1
@@ -108,9 +113,11 @@ namespace gsb_gesAMM_APP
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(161, 72);
+            this.groupBox1.Location = new System.Drawing.Point(184, 96);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(397, 129);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(454, 172);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modifier la norme :";
@@ -120,9 +127,10 @@ namespace gsb_gesAMM_APP
             this.btn_modifierNorme.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_modifierNorme.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_modifierNorme.ForeColor = System.Drawing.Color.White;
-            this.btn_modifierNorme.Location = new System.Drawing.Point(161, 91);
+            this.btn_modifierNorme.Location = new System.Drawing.Point(184, 121);
+            this.btn_modifierNorme.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_modifierNorme.Name = "btn_modifierNorme";
-            this.btn_modifierNorme.Size = new System.Drawing.Size(75, 23);
+            this.btn_modifierNorme.Size = new System.Drawing.Size(86, 31);
             this.btn_modifierNorme.TabIndex = 7;
             this.btn_modifierNorme.Text = "Modifer";
             this.btn_modifierNorme.UseVisualStyleBackColor = false;
@@ -137,9 +145,10 @@ namespace gsb_gesAMM_APP
             this.columnHeader4,
             this.columnHeader5});
             this.lV_historiqueModif.HideSelection = false;
-            this.lV_historiqueModif.Location = new System.Drawing.Point(103, 229);
+            this.lV_historiqueModif.Location = new System.Drawing.Point(118, 305);
+            this.lV_historiqueModif.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lV_historiqueModif.Name = "lV_historiqueModif";
-            this.lV_historiqueModif.Size = new System.Drawing.Size(546, 184);
+            this.lV_historiqueModif.Size = new System.Drawing.Size(623, 244);
             this.lV_historiqueModif.TabIndex = 7;
             this.lV_historiqueModif.UseCompatibleStateImageBehavior = false;
             this.lV_historiqueModif.View = System.Windows.Forms.View.Details;
@@ -170,14 +179,16 @@ namespace gsb_gesAMM_APP
             // 
             // FormMaJEtapeNormee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(800, 438);
+            this.ClientSize = new System.Drawing.Size(914, 584);
             this.Controls.Add(this.lV_historiqueModif);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cB_EtapeNormee);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormMaJEtapeNormee";
             this.Text = "FormMaJEtapeNormee";
             this.Load += new System.EventHandler(this.FormMaJEtapeNormee_Load);

@@ -107,3 +107,4 @@ C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_ges
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csprojAssemblyReference.cache
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConsultationEtapesWorkflow.resources
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMaJEtapeNormee.resources
+C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMaJEtapeNormee.resources

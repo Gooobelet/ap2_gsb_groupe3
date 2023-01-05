@@ -34,7 +34,6 @@ namespace gsb_gesAMM_APP
 
         private void cB_Medicament_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             lV_EtapesValid.Items.Clear();
 
             string medChoix = cB_Medicament.Text;
@@ -135,54 +134,62 @@ namespace gsb_gesAMM_APP
 
         private void btn_ajouterDec_Click(object sender, EventArgs e)
         {
-            List<Workflow> lesEtapesChoixMed = Globale.lesMedicaments[cB_Medicament.Text].getLesEtapes();
-            int numEtape = lesEtapesChoixMed[idx].getEtape().getNum();
-            string medDL = cB_Medicament.Text; 
-
-            if (cB_etatDec.Text != "")
+            if (cB_Medicament.Text != "")
             {
-                if (dTP_dateDec.Value <= DateTime.Now)
+                List<Workflow> lesEtapesChoixMed = Globale.lesMedicaments[cB_Medicament.Text].getLesEtapes();
+                int numEtape = lesEtapesChoixMed[idx].getEtape().getNum();
+                string medDL = cB_Medicament.Text;
+
+                if (cB_etatDec.Text != "")
                 {
-                    int idxDec = 0;
-                    bool trouveDec = false;
-                    int idDec = 0;
-
-                    while (idxDec < Globale.lesDecisions.Count && !trouveDec)
+                    if (dTP_dateDec.Value <= DateTime.Now)
                     {
-                        if (Globale.lesDecisions[idxDec].getLeLibelle() == cB_etatDec.Text)
+                        int idxDec = 0;
+                        bool trouveDec = false;
+                        int idDec = 0;
+
+                        while (idxDec < Globale.lesDecisions.Count && !trouveDec)
                         {
-                            idDec = Globale.lesDecisions[idxDec].getLeId();
-                            trouveDec = true;
+                            if (Globale.lesDecisions[idxDec].getLeLibelle() == cB_etatDec.Text)
+                            {
+                                idDec = Globale.lesDecisions[idxDec].getLeId();
+                                trouveDec = true;
+                            }
+                            else
+                            {
+                                idxDec++;
+                            }
                         }
-                        else
-                        {
-                            idxDec++;
-                        }
+
+                        DateTime dateDec = dTP_dateDec.Value;
+
+                        Globale.bdd.setDecisionEtape(numEtape, medDL, dateDec, idDec);
+                        lesEtapesChoixMed[idx].setDateDecision(dateDec);
+                        lesEtapesChoixMed[idx].setDecision(Globale.lesDecisions[idxDec]);
+
+                        cB_Medicament.SelectedIndex = -1;
+                        cB_etatDec.SelectedIndex = -1;
+                        tB_dateNorme.Text = "";
+                        tB_Libelle.Text = "";
+                        tB_Norme.Text = "";
+                        tB_numEtape.Text = "";
+                        lV_EtapesValid.Items.Clear();
+                        dTP_dateDec.Value = DateTime.Now;
                     }
-
-                    DateTime dateDec = dTP_dateDec.Value;
-
-                    Globale.bdd.setDecisionEtape(numEtape, medDL, dateDec, idDec);
-                    lesEtapesChoixMed[idx].setDateDecision(dateDec);
-                    lesEtapesChoixMed[idx].setDecision(Globale.lesDecisions[idxDec]);
-
-                    cB_Medicament.SelectedIndex = -1;
-                    cB_etatDec.SelectedIndex = -1;
-                    tB_dateNorme.Text = "";
-                    tB_Libelle.Text = "";
-                    tB_Norme.Text = "";
-                    tB_numEtape.Text = "";
-                    lV_EtapesValid.Items.Clear();
-                    dTP_dateDec.Value = DateTime.Now;
+                    else
+                    {
+                        MessageBox.Show("Erreur : Vous ne pouvez pas saisir une date de décision supérieur à la date du jour, veuillez la resaisir !", "Erreur date saisi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Erreur : Vous ne pouvez pas saisir une date de décision supérieur à la date du jour, veuillez la resaisir !", "Erreur date saisi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Erreur : Aucun état n'a été sélectionné pour cette décision, veuillez la saisir !", "Erreur état saisi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Erreur : Aucun état n'a été sélectionné pour cette décision, veuillez la saisir !", "Erreur état saisi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                btn_ajouterDec.Enabled = false;
+                MessageBox.Show("Erreur : Aucun médicament n'a été séléctionné, veuillez en saisir un !", "Erreur aucun medicament séléctionné", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
