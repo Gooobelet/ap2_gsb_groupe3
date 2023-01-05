@@ -67,8 +67,6 @@ C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_g
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.genruntimeconfig.cache
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Properties.Resources.resources
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Properties.Resources.resources
-C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Form2.resources
-C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.Form3.resources
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csprojAssemblyReference.cache
 D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csproj.AssemblyReference.cache
 D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormAjoutMédicament.resources
@@ -108,7 +106,6 @@ C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_ges
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConsultationNombreMedicament.resources
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMenuMDI.resources
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormSaisieDecision.resources
-C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.csprojAssemblyReference.cache
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConsultationEtapesWorkflow.resources
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMaJEtapeNormee.resources
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMaJEtapeNormee.resources
