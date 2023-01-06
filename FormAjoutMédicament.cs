@@ -33,14 +33,24 @@ namespace gsb_gesAMM_APP
             string contreindication = Rtb_contre_indication.Text;
             string prixechantillon = tb_prix_echantillon.Text;
 
-            if (depotlegale != "" && nomcommerciale != "" && composition != "" && effets != "" && contreindication != "" && prixechantillon!= "")
+            if (depotlegale != "" && nomcommerciale != "" && composition != "" && effets != "" && contreindication != "" && prixechantillon!= "" && famcode != "")
             {
                 if (!Globale.lesMedicaments.ContainsKey(tb_depot_legale.Text))
                 {
-                    Globale.bdd.setMedicament(depotlegale, nomcommerciale, famcode, composition, effets, contreindication, Convert.ToDouble(prixechantillon));
-                    MessageBox.Show("Médicaments bien ajouté !");
+                    try
+                    {
+                        Globale.bdd.setMedicament(depotlegale, nomcommerciale, famcode, composition, effets, contreindication, Convert.ToDouble(prixechantillon));
+                        MessageBox.Show("Médicaments bien ajouté !");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("La valeur saisis n'est pas un nombre réel", "Erreur", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                    }
                 }
-                
+            }
+            else
+            {
+                MessageBox.Show("Erreur dans la saisis des données", "Erreur", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
         }
 

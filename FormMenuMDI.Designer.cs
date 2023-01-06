@@ -36,12 +36,12 @@ namespace gsb_gesAMM_APP
             this.médicamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreDeMédicamentParFamilleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutDeMédicamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.médicamentsEnCoursDeValidationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.etapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saisirLaDécisionDuneÉtapeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterEtapeParMedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miseÀJourDesÉtapesNorméesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.médicamentsEnCoursDeValidationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +98,14 @@ namespace gsb_gesAMM_APP
             this.ajoutDeMédicamentToolStripMenuItem.Text = "Ajout de médicament";
             this.ajoutDeMédicamentToolStripMenuItem.Click += new System.EventHandler(this.ajoutDeMédicamentToolStripMenuItem_Click);
             // 
+            // médicamentsEnCoursDeValidationToolStripMenuItem
+            // 
+            this.médicamentsEnCoursDeValidationToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
+            this.médicamentsEnCoursDeValidationToolStripMenuItem.Name = "médicamentsEnCoursDeValidationToolStripMenuItem";
+            this.médicamentsEnCoursDeValidationToolStripMenuItem.Size = new System.Drawing.Size(265, 22);
+            this.médicamentsEnCoursDeValidationToolStripMenuItem.Text = "Médicaments en cours de validation";
+            this.médicamentsEnCoursDeValidationToolStripMenuItem.Click += new System.EventHandler(this.médicamentsEnCoursDeValidationToolStripMenuItem_Click);
+            // 
             // etapeToolStripMenuItem
             // 
             this.etapeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -111,6 +119,7 @@ namespace gsb_gesAMM_APP
             // 
             // saisirLaDécisionDuneÉtapeToolStripMenuItem
             // 
+            this.saisirLaDécisionDuneÉtapeToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.saisirLaDécisionDuneÉtapeToolStripMenuItem.Name = "saisirLaDécisionDuneÉtapeToolStripMenuItem";
             this.saisirLaDécisionDuneÉtapeToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.saisirLaDécisionDuneÉtapeToolStripMenuItem.Text = "Saisir la décision d\'une étape";
@@ -118,6 +127,7 @@ namespace gsb_gesAMM_APP
             // 
             // consulterEtapeParMedToolStripMenuItem
             // 
+            this.consulterEtapeParMedToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.consulterEtapeParMedToolStripMenuItem.Name = "consulterEtapeParMedToolStripMenuItem";
             this.consulterEtapeParMedToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.consulterEtapeParMedToolStripMenuItem.Text = "Consulter les étapes par médicament";
@@ -125,6 +135,7 @@ namespace gsb_gesAMM_APP
             // 
             // miseÀJourDesÉtapesNorméesToolStripMenuItem
             // 
+            this.miseÀJourDesÉtapesNorméesToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.miseÀJourDesÉtapesNorméesToolStripMenuItem.Name = "miseÀJourDesÉtapesNorméesToolStripMenuItem";
             this.miseÀJourDesÉtapesNorméesToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
             this.miseÀJourDesÉtapesNorméesToolStripMenuItem.Text = "Mise à jour des étapes normées";
@@ -144,14 +155,6 @@ namespace gsb_gesAMM_APP
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // médicamentsEnCoursDeValidationToolStripMenuItem
-            // 
-            this.médicamentsEnCoursDeValidationToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
-            this.médicamentsEnCoursDeValidationToolStripMenuItem.Name = "médicamentsEnCoursDeValidationToolStripMenuItem";
-            this.médicamentsEnCoursDeValidationToolStripMenuItem.Size = new System.Drawing.Size(265, 22);
-            this.médicamentsEnCoursDeValidationToolStripMenuItem.Text = "Médicaments en cours de validation";
-            this.médicamentsEnCoursDeValidationToolStripMenuItem.Click += new System.EventHandler(this.médicamentsEnCoursDeValidationToolStripMenuItem_Click);
-            // 
             // FormMenuMDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -164,6 +167,7 @@ namespace gsb_gesAMM_APP
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMenuMDI";
             this.Text = "Menu";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMenuMDI_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

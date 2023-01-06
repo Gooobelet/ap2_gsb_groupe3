@@ -160,5 +160,10 @@ namespace gsb_gesAMM_APP
                 f8.Show();
             }
         }
+
+        private void FormMenuMDI_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
