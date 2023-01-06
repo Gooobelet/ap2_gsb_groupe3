@@ -17,6 +17,9 @@ namespace gsb_gesAMM_APP
 
         private void FormConsultationNombreMedicament_Load(object sender, EventArgs e)
         {
+            Globale.lesFamilles.Clear();
+            Globale.bdd.getLesFamilles();
+
             lv_famille.Items.Clear();
             Dictionary<string, Famille>.KeyCollection lesClesFamille = Globale.lesFamilles.Keys;
 
@@ -39,18 +42,23 @@ namespace gsb_gesAMM_APP
             string numLigClic = lv_famille.Items[lv_famille.FocusedItem.Index].Text;
 
             lv_médicament.Items.Clear();
-            foreach(Medicament med in Globale.lesMedicaments.Values)
+            foreach(Famille fam in Globale.lesFamilles.Values)
             {
-                if(med.getFamMed() == numLigClic)
+                if(fam.getCode() == numLigClic)
                 {
                     ListViewItem ligne = new ListViewItem();
-                    ligne.Text = med.getFamMed();
-                    
+                    ligne.Text = fam.getCode();
+                    ligne.SubItems.Add(fam.getNbMedAut().ToString());
 
                     lv_médicament.Items.Add(ligne);
                 }
             }
             
+        }
+
+        private void lv_famille_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

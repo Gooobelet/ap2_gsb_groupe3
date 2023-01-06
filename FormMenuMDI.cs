@@ -139,5 +139,26 @@ namespace gsb_gesAMM_APP
                 f7.Show();
             }
         }
+
+        private void médicamentsEnCoursDeValidationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "FormConsultationWorkFlowMedicament")
+                {
+                    isOpen = true;
+                    f.Focus();
+                    break;
+                }
+            }
+
+            if (isOpen == false)
+            {
+                FormConsultationWorkFlowMedicament f8 = new FormConsultationWorkFlowMedicament();
+                f8.MdiParent = this;
+                f8.Show();
+            }
+        }
     }
 }

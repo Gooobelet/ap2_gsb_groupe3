@@ -54,6 +54,7 @@ namespace gsb_gesAMM_APP
             this.lv_famille.UseCompatibleStateImageBehavior = false;
             this.lv_famille.View = System.Windows.Forms.View.Details;
             this.lv_famille.SelectedIndexChanged += new System.EventHandler(this.lv_famille_SelectedIndexChanged);
+            this.lv_famille.Click += new System.EventHandler(this.lv_famille_Click);
             // 
             // colH_code_famille
             // 
