@@ -279,5 +279,42 @@ namespace gsb_gesAMM_APP
 
             SqlDataRead.Close();
         }
+
+        public void setMedicament(string depotLegale, string nomCommercial, string famCode, string composition, string effets, string contreIndication, double prixEchantillon)
+        {
+            SqlCommand maRequete = new SqlCommand("prc_ajout_medicament", this.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            SqlParameter paramDepotLegale = new SqlParameter("@depotlegale", System.Data.SqlDbType.VarChar, 100);
+            paramDepotLegale.Value = depotLegale;
+
+            SqlParameter paramNomCommercial = new SqlParameter("@nomcommercial", System.Data.SqlDbType.VarChar, 100);
+            paramNomCommercial.Value = nomCommercial;
+
+            SqlParameter paramFamCode = new SqlParameter("@famcode", System.Data.SqlDbType.VarChar, 6);
+            paramFamCode.Value = famCode;
+
+            SqlParameter paramComposition = new SqlParameter("@composition", System.Data.SqlDbType.VarChar, 255);
+            paramComposition.Value = composition;
+
+            SqlParameter paramEffets = new SqlParameter("@effets", System.Data.SqlDbType.Text);
+            paramEffets.Value = effets;
+
+            SqlParameter paramContreIndication = new SqlParameter("@contreindication", System.Data.SqlDbType.Text);
+            paramContreIndication.Value = contreIndication;
+
+            SqlParameter paramPrixEchantillon = new SqlParameter("@prixechantillon", System.Data.SqlDbType.Money);
+            paramPrixEchantillon.Value = prixEchantillon;
+
+            maRequete.Parameters.Add(paramDepotLegale);
+            maRequete.Parameters.Add(paramNomCommercial);
+            maRequete.Parameters.Add(paramFamCode);
+            maRequete.Parameters.Add(paramComposition);
+            maRequete.Parameters.Add(paramEffets);
+            maRequete.Parameters.Add(paramContreIndication);
+            maRequete.Parameters.Add(paramPrixEchantillon);
+
+            maRequete.ExecuteNonQuery();
+        }
     }
 }

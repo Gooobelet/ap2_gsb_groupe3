@@ -109,3 +109,7 @@ C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_ges
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConsultationEtapesWorkflow.resources
 C:\Users\DNoll\Documents\GitKraken\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMaJEtapeNormee.resources
 C:\Users\nolled\Documents\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMaJEtapeNormee.resources
+D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConsultationEtapesWorkflow.resources
+D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormMaJEtapeNormee.resources
+D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormSaisieDecision.resources
+D:\GitHub\ap2_gsb_groupe3\obj\Debug\netcoreapp3.1\gsb_gesAMM_APP.FormConsultationWorkFlowMedicament.resources

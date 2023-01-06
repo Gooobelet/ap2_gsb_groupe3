@@ -45,6 +45,8 @@ namespace gsb_gesAMM_APP
             this.btn_ajouter_med = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.cb_code_famille = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tb_prix_echantillon = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +63,8 @@ namespace gsb_gesAMM_APP
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.tb_prix_echantillon);
             this.groupBox1.Controls.Add(this.Rtb_contre_indication);
             this.groupBox1.Controls.Add(this.Rtb_effets);
             this.groupBox1.Controls.Add(this.label6);
@@ -74,7 +78,7 @@ namespace gsb_gesAMM_APP
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(327, 122);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(348, 280);
+            this.groupBox1.Size = new System.Drawing.Size(348, 314);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ajout medicament";
@@ -163,7 +167,7 @@ namespace gsb_gesAMM_APP
             // 
             // btn_ajouter_med
             // 
-            this.btn_ajouter_med.Location = new System.Drawing.Point(578, 426);
+            this.btn_ajouter_med.Location = new System.Drawing.Point(578, 455);
             this.btn_ajouter_med.Name = "btn_ajouter_med";
             this.btn_ajouter_med.Size = new System.Drawing.Size(97, 30);
             this.btn_ajouter_med.TabIndex = 4;
@@ -189,6 +193,22 @@ namespace gsb_gesAMM_APP
             this.cb_code_famille.Size = new System.Drawing.Size(121, 23);
             this.cb_code_famille.TabIndex = 6;
             this.cb_code_famille.SelectedIndexChanged += new System.EventHandler(this.cb_code_famille_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(40, 267);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(95, 15);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Prix Echantillon :";
+            // 
+            // tb_prix_echantillon
+            // 
+            this.tb_prix_echantillon.Location = new System.Drawing.Point(141, 264);
+            this.tb_prix_echantillon.Name = "tb_prix_echantillon";
+            this.tb_prix_echantillon.Size = new System.Drawing.Size(180, 23);
+            this.tb_prix_echantillon.TabIndex = 11;
             // 
             // FormAjoutMédicament
             // 
@@ -229,5 +249,7 @@ namespace gsb_gesAMM_APP
         private System.Windows.Forms.Button btn_ajouter_med;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cb_code_famille;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tb_prix_echantillon;
     }
 }
